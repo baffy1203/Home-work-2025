@@ -1,0 +1,44 @@
+header {
+  color: blue;
+}
+
+h1 + h2 {
+  color: rgb(70, 162, 60);
+}
+
+div > p {
+  color: rgb(188, 59, 50);
+}
+
+span ~ p {
+  color: blueviolet;
+}
+div {
+  color: aqua;
+}
+#unicorn {
+  color: rgb(135, 135, 11);
+}
+
+.enough {
+  color: rgb(110, 235, 47);
+}
+button:hover {
+  color: red;
+}
+ul li:nth-child(2) {
+  color: rgb(88, 56, 50);
+}
+
+ul li {
+  color: orange;
+}
+
+#first-id,
+.first-class {
+  color: palevioletred;
+}
+span,
+li:nth-child(4) {
+  color: gray;
+}

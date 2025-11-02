@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home-work-4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Застосовується до тегу header, вага 1</h1>
+      <h2>Застосовується до тегу h1, послідовнисть селекторів, вага 2</h2>
+    </header>
+    <div>
+      <p>
+        Застосовує стилі до всіх p, які є безпосередньо дочірніми для div,
+        дочірні селектори, вага 2
+      </p>
+      <section>
+        <p>Застосовує стилі до всіх div, вага 1</p>
+        <span id="unicorn">Застосовує стилі до селектора id, вага 100</span>
+        <p class="enough">
+          Мав би застосовуватись стиль до всіх p, які є братами span але
+          вказавши клас до р виконується інша умова, Послідовність селекторів,
+          вага 10
+        </p>
+        <p>
+          Застосовує стилі до всіх p, які є братами span, Послідовність
+          селекторів, вага 2
+        </p>
+      </section>
+      <button>Має бути червоною при наведенні, псевдоклас, вага 11</button>
+    </div>
+    <span style="color: rgb(230, 238, 10)"
+      >Вбудований стиль (Inline style), вага 1000
+    </span>
+
+    <ul>
+      <li id="first-id" class="first-class">комбінація id i class, вага 110</li>
+      <li>псевдоклас для другого елементу списку, вага 12</li>
+      <li>вкладений селектор, вага 2</li>
+      <li>комбинация тегу і псевдокласу, колір сірий, вага 11</li>
+    </ul>
+  </body>
+</html>

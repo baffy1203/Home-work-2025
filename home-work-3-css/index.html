@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rasom-Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="up">
+      <h1>Одяг для малечі та мам &mdash; вигідно купувати разом</h1>
+    </header>
+
+    <nav>
+      <div class="nav-left">
+        <a class="border-button" href="index.html">Головна</a>
+        <a class="border-button" href="pages/catalog.html">Каталог</a>
+        <a class="border-button" href="pages/about.html">Про нас</a>
+        <a class="border-button" href="pages/contacts.html">Контакти</a>
+        <a class="border-button" href="pages/delivery.html"
+          >Доставка і оплата</a
+        >
+        <a class="border-button" href="pages/articles.html">Корисні поради</a>
+      </div>
+      <div class="nav-right">
+        <form action="/search" method="get" class="search-form">
+          <input type="search" name="q" placeholder="Пошук..." />
+          <button type="submit">🔍</button>
+        </form>
+
+        <a href=""
+          ><img src="images/heart.svg" alt="Вибране" width="24" height="24"
+        /></a>
+
+        <a href="pages/registration.html"
+          ><img src="images/user.svg" alt="Кабінет" width="24" height="24"
+        /></a>
+
+        <a href=""
+          ><img
+            src="images/shopping-cart.svg"
+            alt="Корзина"
+            width="24"
+            height="24"
+        /></a>
+      </div>
+    </nav>
+    <div class="popular-things-bloc">
+      <h2 class="popular-things">Популярні товари:</h2>
+
+      <div class="popular-wrapper">
+        <div class="conteiner_popular">
+          <img
+            src="images/blue-bot.jpg"
+            alt="blue-botonki"
+            width="400"
+            height="400"
+          />
+          <div class="product-info">
+            <p>630 грн</p>
+            <button>Купити</button>
+          </div>
+        </div>
+
+        <div class="conteiner_popular">
+          <img
+            src="images/pink-bot.jpg"
+            alt="pink-botinki"
+            width="400"
+            height="400"
+          />
+          <div class="product-info">
+            <p>650 грн</p>
+            <button>Купити</button>
+          </div>
+        </div>
+
+        <div class="conteiner_popular">
+          <img
+            src="images/son-coplect.jpg"
+            alt="son-coplect"
+            width="400"
+            height="400"
+          />
+          <div class="product-info">
+            <p>800 грн</p>
+            <button>Купити</button>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="popular-things">Зараз в наявності:</h2>
+
+      <div class="now-buy-wrapper">
+        <div class="now-buy-card">
+          <img src="images/black-paints.jpg" alt="black-paints" />
+          <div class="product-info">
+            <p>300 грн</p>
+            <button>Купити</button>
+          </div>
+        </div>
+
+        <div class="now-buy-card">
+          <img src="images/brown-coft.jpg" alt="brown-coft" />
+          <div class="product-info">
+            <p>480 грн</p>
+            <button>Купити</button>
+          </div>
+        </div>
+
+        <div class="now-buy-card">
+          <img src="images/costom-grey.jpg" alt="costom-grey" />
+          <div class="product-info">
+            <p>770 грн</p>
+            <button>Купити</button>
+          </div>
+        </div>
+      </div>
+
+      <form>
+        <fieldset class="field-question">
+          <legend id="question">Задати питання</legend>
+
+          <div>
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" />
+          </div>
+
+          <div>
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <textarea name="source" id="sour" cols="50" rows="1">
+         Ваше питання
+        </textarea
+          >
+          <input type="submit" value="Надіслати" />
+        </fieldset>
+      </form>
+
+      <a class="up" href="#up">Повернутися на верх</a>
+
+      <footer class="footer">
+        <p>&copy; 2025 Дитячі речі гуртом. Всі права захищені.</p>
+      </footer>
+    </div>
+  </body>
+</html>

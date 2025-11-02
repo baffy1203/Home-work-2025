@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Доставка</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header id="up">
+      <h1>Одяг для малечі та мам &mdash; вигідно купувати разом</h1>
+    </header>
+
+    <nav>
+      <div class="nav-left">
+        <a class="border-button" href="../index.html">Головна</a>
+        <a class="border-button" href="catalog.html">Каталог</a>
+        <a class="border-button" href="about.html">Про нас</a>
+        <a class="border-button" href="contacts.html">Контакти</a>
+        <a class="border-button" href="delivery.html">Доставка і оплата</a>
+        <a class="border-button" href="articles.html">Корисні поради</a>
+      </div>
+      <div class="nav-right">
+        <form action="/search" method="get" class="search-form">
+          <input type="search" name="q" placeholder="Пошук..." />
+          <button type="submit">🔍</button>
+        </form>
+
+        <a href=""
+          ><img src="../images/heart.svg" alt="Вибране" width="24" height="24"
+        /></a>
+
+        <a href="/pages/registration.html"
+          ><img src="../images/user.svg" alt="Кабінет" width="24" height="24"
+        /></a>
+
+        <a href=""
+          ><img
+            src="../images/shopping-cart.svg"
+            alt="Корзина"
+            width="24"
+            height="24"
+        /></a>
+      </div>
+    </nav>
+    <div class="conteiner-page">
+      <h2>Доставка і оплата</h2>
+      <p>Ми робимо покупки зручними та доступними для вас:</p>
+      <ul>
+        <li>Доставка: за тарифами Нова Пошта та Укрпошта.</li>
+        <li>Самовивіз: можливий зі складу у м. Дніпро.</li>
+      </ul>
+      <p>
+        Оплата здійснюється зручним для вас способом при оформленні замовлення.
+      </p>
+      <div>
+        <label for="delivery_question"
+          >Який спосіб доставки вам підходить більше?:</label
+        >
+        <select id="delivery_question" name="delivery_question">
+          <option value="new_post">Нова пошта</option>
+          <option value="ukr_post">Укрпошта</option>
+          <option value="free_post">Самовивіз</option>
+        </select>
+      </div>
+      <p>
+        Залишились питання? <a href="../index.html#question">Запиши його тут</a>
+      </p>
+    </div>
+  </body>
+
+  <footer class="footer">
+    <p>&copy; 2025 Дитячі речі гуртом. Всі права захищені.</p>
+  </footer>
+</html>
