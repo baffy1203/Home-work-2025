@@ -1,0 +1,22 @@
+ul {
+  list-style: none;
+}
+.list{
+  float: left;
+  padding: 40px;
+  margin: 50px;
+  color: darkblue;
+ 
+}
+.without{
+  clear: left;
+}
+.floa-img img{
+  width: 200px;
+  height: 300px;
+  padding-top: 30px;
+}
+.without-floa{
+  display: block;
+clear: left;
+}

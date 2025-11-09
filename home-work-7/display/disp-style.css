@@ -1,0 +1,42 @@
+.select {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(236, 191, 191);
+  justify-content: center;
+}
+.select2 p {
+  display: inline;
+  background-color: rgb(231, 231, 140);
+}
+
+.first-img img {
+  width: 200px;
+  height: 300px;
+}
+.second-img img {
+  width: 200px;
+  height: 300px;
+  display: flex;
+}
+.third-img img {
+  width: 100px;
+  height: 200px;
+}
+.third-img {
+  background-color: rgb(201, 64, 64);
+  width: 416px;
+}
+.hidden {
+  visibility: hidden;
+}
+.bloc p {
+  background-color: rgb(225, 208, 246);
+  padding: 40px;
+  border: 2px solid black;
+  margin: 60px;
+  width: 300px;
+}
+.second p {
+  box-sizing: border-box;
+}

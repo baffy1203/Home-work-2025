@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+}
+img {
+  height: auto;
+  width: 300px;
+  margin: 20px;
+}
+p {
+  background-color: rgb(246, 193, 124);
+}
+.orange-block {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+}
+.yellow-span {
+  background-color: rgb(240, 241, 140);
+  margin-bottom: 20px;
+}
+.second-img {
+  float: right;
+}
+.lorem-block {
+  display: block;
+  background-color: rgb(189, 219, 193);
+  margin-top: 20px;
+}
+.right-img {
+  float: left;
+}
+.div-version {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(168, 158, 134);
+  margin-top: 20px;
+}

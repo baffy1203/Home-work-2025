@@ -1,0 +1,70 @@
+.fixed-header {
+  width: 100%;
+  background-color: rgb(23, 59, 45);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.span-inline {
+  display: inline-block;
+  background-color: aquamarine;
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+}
+.special {
+  background-color: rgb(226, 245, 175);
+  top: 25px;
+  left: 35px;
+  position: relative;
+}
+.pos-div {
+  position: relative;
+  background-color: rgb(240, 202, 202);
+}
+.for-h3 {
+  display: inline-block;
+  background-color: rgb(206, 173, 231);
+  width: 100px;
+  left: 10px;
+  top: 20px;
+  margin-bottom: 20px;
+}
+.second-absolute{
+  position: absolute;
+  top: 200px;
+}
+img{
+  width: 200px;
+  height: 300px;
+  position: sticky;
+  top: 10px;
+  float: left;
+  margin-right: 30px;
+}
+.across{
+margin-left: 230px;
+
+}
+button {
+  background-color: rgb(192, 230, 225);
+  border: 2px solid seagreen;
+  padding: 10px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 60px;
+  font-size: 20px;
+  right: 50px;
+  margin-bottom: 20px;
+}
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(23, 59, 45);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+}
