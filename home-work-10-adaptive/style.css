@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Roboto-VariableFont_wdth\,wght.ttf");
+}
+:root {
+  --primary-bg: #34547a;
+  --text-pg: #727272;
+  --main-size: 16px;
+}
+.primary-middle {
+  background-color: #eeeff1;
+}
+.dark {
+  background-color: var(--primary-bg);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.navigation {
+  padding-block: 79px;
+  letter-spacing: 2px;
+}
+.menu {
+  display: flex;
+  gap: 48px;
+}
+.menu li {
+  list-style: none;
+}
+.menu li a {
+  text-decoration: none;
+  font-size: var(--main-size);
+  text-transform: uppercase;
+  color: black;
+}
+.menu li a:hover {
+  color: var(--primary-bg);
+}
+.menu-button {
+  display: none;
+}
+.page-title h1 {
+  padding-top: 83px;
+  font-size: 48px;
+  padding-bottom: 60px;
+}
+.heder_text {
+  font-size: var(--main-size);
+  color: var(--text-pg);
+  width: 540px;
+  padding-bottom: 65px;
+}
+.write-me {
+  padding: 25px 41px 17px 41px;
+  color: #ffffff;
+  background-color: var(--primary-bg);
+  text-transform: uppercase;
+  border: none;
+  font-size: var(--main-size);
+}
+.header {
+  padding-bottom: 141px;
+}
+section.about-me {
+  border-color: #f9f9f9;
+}
+section.about-me .container {
+  padding-block: 112px 100px;
+  text-align: center;
+}
+section.about-me .container h2 {
+  font-size: calc(var(--main-size) * 2);
+  padding-bottom: 50px;
+}
+section.about-me .container .about-text {
+  width: 540px;
+  margin: 0 auto;
+  line-height: 30px;
+  color: var(--text-pg);
+}
+section.projects {
+  padding-block: 100px;
+}
+section.projects .my-projects {
+  display: flex;
+  gap: 49px;
+  color: white;
+  /* padding-bottom: 32px; */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section.projects .my-projects li {
+  list-style: none;
+  width: 141px;
+  height: 50px;
+  background-image: url("img/project.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 70px;
+}
+section.projects .my-projects li span {
+  font-size: 21px;
+}
+.light {
+  background-color: #eeeff1;
+}
+section.how-i-work .container {
+  padding-block: 100px 57px;
+  text-align: center;
+}
+section.how-i-work .container h2 {
+  font-size: calc(var(--main-size) * 2);
+  padding-bottom: 50px;
+}
+section.how-i-work .container .work-text {
+  width: 540px;
+  margin: 0 auto;
+  line-height: 25px;
+  color: #727272;
+  padding-bottom: 57px;
+}
+.new-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+.footer {
+  padding-block: 50px;
+  color: white;
+}
+.footer .author {
+  font-size: 21px;
+  padding-bottom: 20px;
+}
+.footer .copyright {
+  font-size: 13px;
+}
+@media (max-width: 1080px) {
+  .primary-middle {
+    padding-left: 20px;
+  }
+  .footer {
+    padding: 20px;
+    color: white;
+  }
+}
+@media (max-width: 780px) {
+  .menu li a {
+    font-size: 14px;
+  }
+  .footer {
+    padding: 18px;
+    color: white;
+  }
+  .primary-middle {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 550px) {
+  .menu li a {
+    font-size: 12px;
+    padding-left: 5px;
+  }
+  .heder_text {
+    padding: auto;
+    width: 90%;
+  }
+  section.about-me .container .about-text {
+    width: 90%;
+    margin: 0 auto;
+  }
+  section.how-i-work .container .work-text {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .menu {
+    display: none;
+  }
+  .menu-button {
+    display: inline;
+  }
+  .primary-middle {
+    padding-left: 10px;
+  }
+  .footer {
+    padding: 0 auto;
+    color: white;
+  }
+}
