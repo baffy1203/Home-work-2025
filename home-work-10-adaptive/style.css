@@ -92,11 +92,11 @@ section.projects {
 }
 section.projects .my-projects {
   display: flex;
-  gap: 49px;
+  gap: 48px;
   color: white;
   /* padding-bottom: 32px; */
-  flex-wrap: wrap;
-  justify-content: center;
+  /* flex-wrap: wrap;
+  justify-content: center; */
 }
 section.projects .my-projects li {
   list-style: none;
@@ -150,6 +150,11 @@ section.how-i-work .container .work-text {
   .footer {
     padding: 20px;
     color: white;
+  }
+  section.projects .my-projects {
+   
+    flex-wrap: wrap;
+    justify-content: center; 
   }
 }
 @media (max-width: 780px) {
