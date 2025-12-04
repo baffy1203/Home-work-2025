@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .animated-ellipse {
+        animation: fillColor 2s infinite alternate,
+          borderColor 2s infinite alternate;
+      }
+
+      @keyframes fillColor {
+        0% {
+          fill: orange;
+        }
+        100% {
+          fill: rgb(201, 232, 242);
+        }
+      }
+
+      @keyframes borderColor {
+        0% {
+          stroke: black;
+        }
+        100% {
+          stroke: purple;
+        }
+      }
+    </style>
+    <title>SVG</title>
+  </head>
+  <body>
+    <img src="exsample-one.svg" alt="1" />
+    <img src="circle.svg" alt="2" />
+    <img src="ex2.svg" alt="3" />
+    <img class="animated-ellipse" src="elipse.svg" alt="4" />
+
+    <svg viewBox="0 0 100 100" width="200" height="200">
+      <ellipse
+        class="animated-ellipse"
+        cx="50"
+        cy="50"
+        rx="20"
+        ry="40"
+        fill="orange"
+        stroke="black"
+        stroke-width="5"
+      />
+    </svg>
+  </body>
+</html>
