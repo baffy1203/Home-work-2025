@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Open sans";
+  font-style: normal;
+  src: url(../assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@theme {
+  --color-brand: #37806B;
+  --color-brand-brown: #CAA892;
+  --font-display: "Open sans", "sans serif"
+}
