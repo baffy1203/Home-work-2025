@@ -3,11 +3,13 @@
 @font-face {
   font-family: "Open sans";
   font-style: normal;
-  src: url(../assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
-}
+  src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");
+  }
 
 @theme {
   --color-brand: #37806B;
   --color-brand-brown: #CAA892;
+  --color-brand-gray: #646464;
+  --color-ligth-gray: #F8F8F8;
   --font-display: "Open sans", "sans serif"
 }

@@ -4,50 +4,175 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="stylesheet" href="assets/css/output.css">
+    <link rel="stylesheet" href="assets/css/output.css" />
     <title>Tailwind</title>
   </head>
-  <body>
+  <body class="font-display max-w-7xl mx-auto">
     <header>
-      <nav class="flex items-center justify-between px-6 py-8">
-        <div><img class="logo" src="assets/images/logo.svg" alt="logo" /></div>
+      <nav class="flex relative items-center justify-between px-6 py-8 pb-20">
         <div>
-          <ul class="flex items-center gap-6">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PROJECT</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">SHOP</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li>
-              <a href="#"
-                ><button
-                  class="px-4 rounded-tl-2xl rounded-br-2xl bg-brand-brown shadow-md px-4 py-2"
-                >
-                  Sign up
-                </button></a
-              >
-            </li>
-          </ul>
+          <img class="logo w-[151px]" src="assets/images/logo.svg" alt="logo" />
         </div>
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+        <label
+          for="menu-toggle"
+          class="md:hidden flex flex-col gap-[6px] cursor-pointer"
+        >
+          <span class="w-6 h-[3px] bg-black block"></span>
+          <span class="w-6 h-[3px] bg-black block"></span>
+          <span class="w-6 h-[3px] bg-black block"></span>
+        </label>
+        <ul
+          class="absolute left-0 top-full w-full bg-white flex-col items-center gap-6 py-6 hidden peer-checked:flex md:static md:flex md:flex-row md:w-auto md:bg-transparent"
+        >
+          <li><a href="#" class="hover:text-[#646464]">HOME</a></li>
+          <li><a href="#" class="hover:text-[#646464]">PROJECT</a></li>
+          <li><a href="#" class="hover:text-[#646464]">SERVICES</a></li>
+          <li><a href="#" class="hover:text-[#646464]">ABOUT</a></li>
+          <li><a href="#" class="hover:text-[#646464]">BLOG</a></li>
+          <li><a href="#" class="hover:text-[#646464]">SHOP</a></li>
+          <li><a href="#" class="hover:text-[#646464]">CONTACT</a></li>
+          <li>
+            <a href="#"
+              ><button
+                class="px-4 rounded-tl-2xl rounded-br-2xl bg-brand-brown shadow-md px-4 py-2"
+              >
+                <a href="#" class="hover:text-[#646464]">Sign up</a>
+              </button></a
+            >
+          </li>
+        </ul>
       </nav>
     </header>
-    <div class="flex">
-      <div class="px-6 py-2">
-        <h3>MODERN INTERIOR</h3>
-        <h1>Create Your
-          Interior Design.</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation.</p>
-            <button
-                  class="px-4 rounded-tl-2xl rounded-br-2xl bg-[#37806B] shadow-md px-4 py-2"
-                > Contact
-              </button></a>
+    <section>
+      <div class="flex flex-col md:flex-row items-center gap-10 pb-20">
+        <div class="px-6 w-full md:w-2/5 text-center md:text-left pb-15">
+          <h3 class="text-brand-gray pb-2">MODERN INTERIOR</h3>
+          <h1 class="pb-5 text-6xl">Create Your Interior Design.</h1>
+          <p class="text-brand-gray pb-8">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation.
+          </p>
+          <button
+            class="px-4 rounded-tl-2xl rounded-br-2xl bg-brand shadow-md px-4 py-2 text-white"
+          >
+            <a href="#" class="hover:text-[#646464]">Contact</a>
+          </button>
+        </div>
+        <div
+          class="relative flex justify-center md:justify-end w-full md:w-3/5 mt-10 md:mt-0"
+        >
+          <img
+            src="assets/images/mask.svg"
+            alt="1"
+            class="justify-end rounded-tl-2xl rounded-br-2xl px-6 z-10 relative"
+          />
+          <img
+            class="absolute bottom-[-20px] right-[-10px] z-0"
+            src="assets/images/Rectangle 27.svg"
+            alt="rec"
+          />
+        </div>
       </div>
-      <div><img src="assets/images/mask.svg" alt="1" class="rounded-tl-2xl rounded-br-2xl px-6" /></div>
-    
-  </div>
+    </section>
+
+    <section class="py-20">
+      <div class="max-w-3xl mx-auto text-center px-4">
+        <h3 class="text-3xl font-semibold tracking-widest mb-4">
+          DON’T FORGET TO SIGN UP
+        </h3>
+        <div class="w-110 h-px bg-gray-300 mx-auto mb-6"></div>
+        <p class="text-brand-gray mb-10">
+          Find out early about all upcoming promotions and new product releases
+          with our newsletter.
+        </p>
+
+        <div class="flex flex-col sm:flex-row max-w-xl mx-auto">
+          <input
+            type="email"
+            placeholder="Enter your email address...."
+            class="flex-1 px-4 py-3 bg-gray-100 rounded-l-md outline-none"
+          />
+          <button class="bg-brand text-white px-6 rounded-r-md">
+            SUBSCRIBE
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-ligth-gray pt-10">
+      <div
+        class="max-w-7xl mx-auto px-6 pb-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-10"
+      >
+        <div class="xl:col-span-1 lg:col-span-2">
+          <img class="w-[151px] mb-4" src="assets/images/logo.svg" alt="logo" />
+          <p class="text-brand-gray text-sm">
+            But i must explain to you all this mistaken idea of dencouncing
+            pleasure.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm text-brand-gray">
+            <li>About Our Company</li>
+            <li>Services WE provide</li>
+            <li>Career & Opportunity</li>
+            <li>Privacy & policy</li>
+            <li>Contact US</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Company</h4>
+          <ul class="space-y-2 text-sm text-brand-gray">
+            <li>About Company</li>
+            <li>Our Testimonials</li>
+            <li>Latest News</li>
+            <li>Our mission</li>
+            <li>Get a free Quot</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Contact us</h4>
+          <ul class="space-y-2 text-sm text-brand-gray">
+            <li>Sagrada Familia, Herba</li>
+            <li>Street Front USA</li>
+            <li>brandoxide@gmail.com</li>
+            <li>002-568423591</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Follow Us</h4>
+          <div class="flex gap-3">
+            <img
+              class="cursor-pointer opacity-60 hover:opacity-100 transition"
+              src="assets/images/Group 32.svg"
+            />
+            <img
+              class="cursor-pointer opacity-60 hover:opacity-100 transition"
+              src="assets/images/Group 33.svg"
+            />
+            <img
+              class="cursor-pointer opacity-60 hover:opacity-100 transition"
+              src="assets/images/Group 34.svg"
+            />
+            <img
+              class="cursor-pointer opacity-60 hover:opacity-100 transition"
+              src="assets/images/Group 35.svg"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-300"></div>
+      <div class="max-w-7xl mx-auto py-4 text-center text-sm text-brand-gray">
+        Copyright @ 2020
+        <span class="text-brand">Brandoxide</span>. all right reserved.
+      </div>
+    </footer>
   </body>
 </html>
