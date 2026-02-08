@@ -1,0 +1,16 @@
+#myButton{
+  border: 2px solid black;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  
+}
+#myButton:hover{
+  cursor: pointer;
+}
+
+.glow-green {
+  background-color: #2ecc71;
+  box-shadow: 0 0 12px #2ecc71;
+  /* transition: background-color 0.3s, box-shadow 0.3s; */
+}
