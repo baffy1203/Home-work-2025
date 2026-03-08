@@ -1,0 +1,23 @@
+@import "fonts.css";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+}
+
+.logo {
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-image: url('../assets/icon-square-big.png');
+}
+.sect {
+  height: 200px;
+}
+
+h1{
+  font-family: 'Kaushan Script';
+  color: darkgreen;
+}
