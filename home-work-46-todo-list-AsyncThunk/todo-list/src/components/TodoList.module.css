@@ -1,0 +1,64 @@
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 900px; /* як у todo-item */
+  padding: 10px;
+  margin: 5px;
+
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+
+.input {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+  background: transparent;
+  color: white;
+  outline: none;
+  width: 120px;
+}
+
+
+.button,
+.buttonAdd {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button {
+  background-color: #555;
+  color: white;
+}
+
+.button:hover {
+  background-color: #777;
+}
+
+
+.buttonAdd {
+  background-color: #2e7d32;
+  color: white;
+ margin-left: 10px;
+}
+
+.buttonAdd:hover {
+  background-color: #43a047;
+}
