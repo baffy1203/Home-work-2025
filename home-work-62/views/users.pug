@@ -1,0 +1,15 @@
+doctype html
+html(lang="uk")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Користувачі
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    .container
+      h1 Список користувачів
+
+      each user in users
+        .card
+          h2= user.username
+          p ID: #{user.id}

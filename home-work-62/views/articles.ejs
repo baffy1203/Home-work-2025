@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статті</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Список статей</h1>
+
+<% articles.forEach(article => { %>
+
+<div class="card">
+
+<h2><%= article.title %></h2>
+
+<p>ID: <%= article.id %></p>
+
+</div>
+
+<% }) %>
+
+</div>
+
+</body>
+</html>
