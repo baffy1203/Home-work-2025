@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title Статті
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Список статей
+
+    each article in articles
+      .card
+        h2= article.title
+        p ID: #{article.id}

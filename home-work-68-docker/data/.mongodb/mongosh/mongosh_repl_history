@@ -1,0 +1,7 @@
+exit
+stop
+show collections
+use test-db-leya
+show dbs
+exit
+show dbs

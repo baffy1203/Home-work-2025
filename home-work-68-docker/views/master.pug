@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title= title
+  body
+    h1= master.name
+
+    p
+      strong Спеціалізація:
+      |  #{master.specialization}
+
+    p
+      strong Досвід:
+      |  #{master.experience} років
+
+    p
+      strong Місто:
+      |  #{master.city}
+
+    p
+      strong Email:
+      |  #{master.email}
+
+    p
+      strong Телефон:
+      |  #{master.phone}
+
+    p
+      strong Ціна:
+      |  #{master.price} грн
+
+    p
+      a(href="/masters") ← Назад до списку
