@@ -1,0 +1,112 @@
+cd Downloads 
+
+cd mongosh-2.9.2-darwin-x64 cd bin
+
+./mongosh
+
+./mongosh "mongodb+srv://vika5364452_db_user:W9zsbaAGgPbT9o7G@clusterleyaspace.us4mlne.mongodb.net/?appName=ClusterLeyaSpace"
+
+show dbs
+db.createCollection("studentDB")
+
+use studentDB
+
+show collections (не обов’язково)
+
+db.studentDB.renameCollection("assignments")
+
+db.assignments.insertMany([
+  {
+    name: "Олександр",
+    subject: "Математика",
+    score: 95
+  },
+  {
+    name: "Марія",
+    subject: "Українська мова",
+    score: 88
+  },
+  {
+    name: "Андрій",
+    subject: "Історія",
+    score: 76
+  },
+  {
+    name: "Софія",
+    subject: "Англійська мова",
+    score: 91
+  },
+  {
+    name: "Іван",
+    subject: "Фізика",
+    score: 82
+  },
+  {
+    name: "Катерина",
+    subject: "Хімія",
+    score: 97
+  },
+  {
+    name: "Дмитро",
+    subject: "Біологія",
+    score: 69
+  },
+  {
+    name: "Олена",
+    subject: "Географія",
+    score: 85
+  },
+  {
+    name: "Максим",
+    subject: "Інформатика",
+    score: 100
+  },
+  {
+    name: "Вікторія",
+    subject: "Література",
+    score: 79
+  }
+])
+
+
+db.assignments.find()
+
+//ще одного додаю 
+db.assignments.insertOne({
+  name: "Андрій",
+  subject: "Історія",
+  score: 81
+})
+
+
+//пошук з оцінкою більше 80
+db.assignments.find({ score: { $gt: 80 }})
+
+// збільшення на 5 балів одного студента
+db.assignments.updateOne(
+  { name: "Іван", score: { $lt: 85 } },
+  { $inc: { score: 5 } }
+)
+//перевірка
+db.assignments.find({ name: "Дмитро" })
+
+//пошук студента з найнижчим балом
+db.assignments.find().sort({ score: 1 }).limit(1)
+// його видалення
+db.assignments.deleteOne({
+ _id: ObjectId('6a71e9706cad939a1f7c75f9')
+})
+//просто подивилась чи видалився
+db.assignments.find() 
+
+//щоб вивести тільки поле ім'я та бал 
+db.assignments.find(
+  {},
+  {
+    name: 1,
+    score: 1,
+    _id: 0
+  }
+)
+
+exit
