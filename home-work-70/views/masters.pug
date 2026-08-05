@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title= title
+  body
+    h1 Список майстрів
+
+    ul
+      each master in masters
+        li
+          a(href=`/masters/${master._id}`)
+            = master.name
+          |  — #{master.specialization} (#{master.city})
