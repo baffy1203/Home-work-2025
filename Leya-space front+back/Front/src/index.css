@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+.leya-calendar .react-calendar {
+  width: 100%;
+  border: none;
+  font-family: inherit;
+  background: transparent;
+}
+
+.leya-calendar .react-calendar__tile {
+  border-radius: 16px;
+  height: 48px;
+  transition: 0.2s;
+}
+
+.leya-calendar .react-calendar__tile:hover {
+  background: #f7f3f1;
+}
+
+.leya-calendar .react-calendar__tile--active {
+  background: #7c5569 !important;
+  color: white;
+}
+
+.leya-calendar .react-calendar__navigation button {
+  border-radius: 14px;
+  min-height: 44px;
+  font-weight: 600;
+}
+
+.leya-calendar .react-calendar__navigation button:hover {
+  background: #f7f3f1;
+}
+
+.leya-calendar .react-calendar__month-view__weekdays {
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #9a8f94;
+}
+/* Робочий день */
+.working-day {
+  background: #e7f6eb !important;
+  border-radius: 14px;
+}
+
+/* Вихідний */
+.day-off {
+  background: #fde7e7 !important;
+  border-radius: 14px;
+}
+
+/* Частково зайнятий */
+.partial-day {
+  background: #fff4d6 !important;
+  border-radius: 14px;
+}
+
+/* Повністю зайнятий */
+.full-day {
+  background: #eadcf3 !important;
+  border-radius: 14px;
+  color: #7c5569 !important;
+}
